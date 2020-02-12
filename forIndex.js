@@ -16,6 +16,20 @@ function factoralizeNumber() {
    }
 
 
+// Find length of the longest word in a sentence.
+function findLength() {
+    var sentence = document.getElementById('userInput3').value;
+    var words = sentence.split(' ');
+    maxLength = 0;
+    
+    for (var i = 0; i < words.length; i++) {
+        if (words[i].length > maxLength) {
+            maxLength = words[i].length;
+        }
+    }
+    document.getElementById('results3').innerHTML = maxLength;
+}
+
    
   
  
